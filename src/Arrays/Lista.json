@@ -1,0 +1,16 @@
+[
+    {
+        "id": 0,
+        "title": "FunkoPop Woody",
+        "description" : "FunkoPop Woody Edicion Limitada",
+        "price": "11.900",
+        "image": "https://ripleycl.imgix.net/https%3A%2F%2Fs3.amazonaws.com%2Fimagenes-sellers-mercado-ripley%2FImagenes-MIRAKL%2FMPM00002571116%2FMPM00002571116-1-F.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=95653b7ade9c0f60337f9b396fc0b544"
+    },
+    {
+        "id": 1,
+        "title": "FunkoPop Stitch",
+        "description" : "FunkoPop Stitch Regular Edition",
+        "price": "9.900",
+        "image": "https://www.tiendawabro.com.ar/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/2/3/2353.jpg"
+    }
+]

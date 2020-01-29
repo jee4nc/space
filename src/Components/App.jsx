@@ -1,11 +1,17 @@
 import React from 'react';
+import '../Styles/Styles.scss'
+import Banner from './Molecules/Banner'
+import Cards from './Molecules/Cards'
 
 
 function App() {
   return (
-    <div>
-      <h1>Hola Mundo</h1>
+    <>
+    <Banner></Banner>
+    <div className="ed-grid m-grid-3">
+      <Cards/>
     </div>
+    </>
   );
 }
 
