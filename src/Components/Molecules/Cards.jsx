@@ -1,11 +1,11 @@
 import React from 'react'
 import Proptypes from 'prop-types';
-import Lista from '../../Arrays/Lista.json'
-// import Lista from '../../Arrays/Lista.json'
+
 
 
 const Cards = ({id,title,description,price,image}) => (
-    <article className="card" id={id} >
+
+    <article className="card" id={id} key={id} >
         <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
             <img src={image} alt="imagen"/>
         </div>

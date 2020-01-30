@@ -12,5 +12,12 @@
         "description" : "FunkoPop Stitch Regular Edition",
         "price": "9.900",
         "image": "https://www.tiendawabro.com.ar/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/2/3/2353.jpg"
+    },
+    {
+        "id": 2,
+        "title": "FunkoPop Jinx",
+        "description": "FUnkoPop League of Legends",
+        "price": "10.900",
+        "image": "https://www.metalgame.cl/wp-content/uploads/2018/01/889698103053.jpg"
     }
 ]
