@@ -4,8 +4,8 @@ class Form extends Component {
 
     render() {
         return (
-            <form>
-                <div className="ed-container" id="Formm" >
+            <form id="Formm">
+                <div className="ed-container"  >
                     <div className="ed-item l-50 form__item">
                         <label>Nombre Completo</label>
                         <input type="text"></input>
