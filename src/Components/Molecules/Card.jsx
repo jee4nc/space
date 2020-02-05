@@ -12,7 +12,7 @@ const Card = ({ match }) => {
                     product ? (
                         <>
                         <h1 className="m-cols-3"> {product.title} </h1>
-                        <img className="m-cols-2" src={product.image} alt={ product.title }/>
+                        <img className="m-cols-1" src={product.image} alt={ product.title }/>
                         <p className="m-cols-1"> {product.description} </p>
                         </>
                     )
