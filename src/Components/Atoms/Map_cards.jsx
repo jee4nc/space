@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Lista from "../../Arrays/Lista";
 import Cards from "../Molecules/Cards";
+import whithLoader from '../HOC/whitLoeader';
 
 // dentro del state creo un array lista y le asigno los Valores de mi Lista.json
 class Map_cards extends Component {
@@ -27,4 +28,4 @@ class Map_cards extends Component {
         )
     }
 }
-export default Map_cards;
+export default whithLoader(Map_cards);

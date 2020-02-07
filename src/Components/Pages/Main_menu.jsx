@@ -2,7 +2,7 @@ import React, { Component} from 'react';
 import Lista from "../../Arrays/Lista";
 import Banner from "../Molecules/Banner";
 import Cards from "../Molecules/Cards";
-import Form from "../Organism/Form";
+import Form from "../Pages/Form";
 
 
 class Main_menu extends Component {

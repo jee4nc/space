@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import '../Styles/Styles.scss';
-import Form from './Organism/Form';
+import Form from './Pages/Form';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Card from './Molecules/Card';
-import Main_menu from "./Organism/Main_menu"
+import Main_menu from "./Pages/Main_menu"
 import Map_cards from "./Atoms/Map_cards";
 import Not_found from "./Atoms/Not_found";
 import Headerr from './Molecules/Headerr';
