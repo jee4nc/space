@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; //Se tiene que importar React
 
-const withLoader = (WrappedComponent) => {
+const withLoader = (WrappedComponent) => { //Esto se tiene que crear de esta maneraa
     return class whithLoader extends Component{
-        constructor(props) {
+        constructor(props) { //Se tiene que crear un metodo constructor que reciba las props
             super(props)
         }
         render() {
