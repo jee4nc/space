@@ -4,10 +4,10 @@ import Form from './Pages/Form';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Card from './Molecules/Card';
 import Main_menu from "./Pages/Main_menu"
-import Map_cards from "./Atoms/Map_cards";
 import Not_found from "./Atoms/Not_found";
 import Headerr from './Molecules/Headerr';
 import Users from './Pages/Users';
+import CardsGrid from './Pages/CardsGrid';
 
 // En esta pieza de codigo,modifico el componente App a clase y agrego un state
 // dentro del state creo un array lista y le asigno los Valores de mi Lista.json
@@ -26,7 +26,7 @@ class App extends Component {
       <Switch>
       <Route path="/" exact component={Main_menu}></Route>
         <Route path="/cards/:id" component={Card}/>
-        <Route path="/cards" component={Map_cards}/>
+        <Route path="/cards" component={CardsGrid}/>
         <Route path="/form" component={Form}/>
         <Route path="/users" component={Users}/>
         <Route component={Not_found}/>

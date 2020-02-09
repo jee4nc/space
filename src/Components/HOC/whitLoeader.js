@@ -6,6 +6,7 @@ const withLoader = (WrappedComponent) => { //Esto se tiene que crear de esta man
             super(props)
         }
         render() {
+            console.log(this.props);
             return <WrappedComponent {...this.props} />
         }
     }
