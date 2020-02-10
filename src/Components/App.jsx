@@ -7,7 +7,7 @@ import Main_menu from "./Pages/Main_menu"
 import Not_found from "./Atoms/Not_found";
 import Headerr from './Molecules/Headerr';
 import Users from './Pages/Users';
-import CardsGrid from './Pages/CardsGrid';
+import Axios_cards from './Pages/CardsGrid'
 
 // En esta pieza de codigo,modifico el componente App a clase y agrego un state
 // dentro del state creo un array lista y le asigno los Valores de mi Lista.json
@@ -26,7 +26,7 @@ class App extends Component {
       <Switch>
       <Route path="/" exact component={Main_menu}></Route>
         <Route path="/cards/:id" component={Card}/>
-        <Route path="/cards" component={CardsGrid}/>
+        <Route path="/cards" component={Axios_cards}/>
         <Route path="/form" component={Form}/>
         <Route path="/users" component={Users}/>
         <Route component={Not_found}/>

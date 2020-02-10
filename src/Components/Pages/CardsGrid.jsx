@@ -1,10 +1,51 @@
-import React from 'react';
-import Cards from "../Molecules/Cards"
+import React, { Component } from 'react';
+import Axios from 'axios';
+import Cards from '../Molecules/Cards';
+import whithLoader from "../HOC/whitLoeader"
 
-const CardsGrid = ({courses}) => (
-    //FIX ME
-    <div> ({console.log(courses)})
-        </div>
-)
+class Axios_cards extends Component {
 
-export default CardsGrid;
+    constructor(props) {
+
+        super(props)
+        this.state = {
+            courses : []
+        }      
+    }
+//                              FIX ME
+
+    componentDidMount() {
+        Axios.get('https://my-json-server.typicode.com/jee4nc/myjsonserver/lista')
+        .then(response => this.setState({
+                courses: response.data
+                
+        }))
+    }
+    render() {
+        
+        const { courses } = this.state
+        return (
+            <>
+
+            <div className="ed-grid m-grid-3">
+
+            {courses.length===0 ?
+                <h1>Cargando...</h1> :
+                courses.map(u =>        //Y SE MAPEA COMO YA SABEMOS
+                                <Cards
+                                key={u.id}
+                                title={u.title}
+                                description={u.description}
+                                image={u.image}
+                                email={u.email}
+                                price={u.price}
+                                />)
+                                
+            }
+            </div>
+            </>
+        )
+    }
+}
+
+export default whithLoader(Axios_cards);
