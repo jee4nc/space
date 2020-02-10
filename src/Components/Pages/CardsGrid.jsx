@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import Cards from '../Molecules/Cards';
-import whithLoader from "../HOC/whitLoeader"
 
 class Axios_cards extends Component {
 
@@ -12,7 +11,7 @@ class Axios_cards extends Component {
             courses : []
         }      
     }
-//                              FIX ME
+
 
     componentDidMount() {
         Axios.get('https://my-json-server.typicode.com/jee4nc/myjsonserver/lista')
@@ -34,6 +33,7 @@ class Axios_cards extends Component {
                 courses.map(u =>        //Y SE MAPEA COMO YA SABEMOS
                                 <Cards
                                 key={u.id}
+                                id={u.id}
                                 title={u.title}
                                 description={u.description}
                                 image={u.image}
@@ -48,4 +48,4 @@ class Axios_cards extends Component {
     }
 }
 
-export default whithLoader(Axios_cards);
+export default Axios_cards;
