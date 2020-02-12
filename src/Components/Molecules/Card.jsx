@@ -9,7 +9,7 @@ const Card = ({ match }) => {
     const [state,setState] = useState({ })
     
     useEffect( () => {
-        Axios.get('https://my-json-server.typicode.com/jee4nc/myjsonserver/lista/4')
+        Axios.get(`https://my-json-server.typicode.com/jee4nc/myjsonserver/lista/${match.params.id}`)
         .then(response => setState(response.data))
     }, []) // <== Esto [] es para que useEffect se actualize solo una vez, y no genere el loop infinito
     
